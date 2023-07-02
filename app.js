@@ -89,6 +89,10 @@ const currentProductPrice = document.querySelector(".productPrice")
 const currentProductColors = document.querySelectorAll(".color")
 const currentProductSizes = document.querySelectorAll(".size")
 
+const productButton=document.querySelector(".productButton")
+const payment = document.querySelector(".payment")
+const close = document.querySelector(".close")
+
 
 menuItems.forEach((item, index) => {
 
@@ -119,7 +123,7 @@ currentProductColors.forEach((color, index)=>{
     })
 })
 
-currentProductSizes.forEach((color,index)=>{
+currentProductSizes.forEach((size,index)=>{
     size.addEventListener("click",()=>{
         currentProductSizes.forEach(size=>{
             size.style.backgroundColor="white"
@@ -129,3 +133,14 @@ currentProductSizes.forEach((color,index)=>{
         size.style.color="white"
     })
 })
+
+
+productButton.addEventListener("click",()=>{
+    // payment.style.display="flex";
+    payment.style.display="flex"
+    // console.log("click")
+});
+
+close.addEventListener("click",()=>{
+    payment.style.display="none";
+});

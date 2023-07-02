@@ -7,7 +7,7 @@
     <title>Nike Store</title>
 </head>
 <body>
-    <nav>
+    <nav id="nav">
         <div class="navTop">
             <div class="navItem">
                 <img src="./img/sneakers.png" alt="">
@@ -131,9 +131,120 @@
             </div>
             <button class="productButton">BUY NOW!</button>
         </div>
-        
+        <div class="payment">
+            <h1 class="payTitle">Personal Information</h1>
+            <label>Name and Surname</label>
+            <input type="text" placeholder="Yusra Almousa" class="payInput">
+            <label>Phone Number</label>
+            <input type="text" placeholder="+966537370143" class="payInput">
+            <label>Address</label>
+            <input type="text" placeholder="Saudi Arabia, Jeddah" class="payInput">
+
+            <h1 class="payTitle">Card Information</h1>
+            <div class="cardIcons">
+                <img src="./img/visa.png" width="40" class="cardIcon">
+                <img src="./img/master.png" width="40" alt="" class="cardIcon">
+            </div>
+            <input type="password" placeholder="Cart Number" class="payInput">
+            <div class="cardInfo">
+                <input type="text" placeholder="mm" class="payInput sm">
+                <input type="text" placeholder="yyyy" class="payInput sm">
+                <input type="text" placeholder="cvv" class="payInput sm">
+            </div>
+            <button class="payButton">Checkout!</button>
+            <span class="close">X</span>
+        </div>
+    </div>
+    <div class="gallery">
+        <div class="galleryItem">
+            <h1 class="galleryTitle">Be Yourself!</h1>
+            <img src="https://images.pexels.com/photos/3611797/pexels-photo-3611797.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+             alt="" class="galleryImg">
+        </div>
+        <div class="galleryItem">
+            <img src="https://images.pexels.com/photos/3490360/pexels-photo-3490360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+             alt="" class="galleryImg">
+             <h1 class="galleryTitle">This is the First Day of Your New Life!</h1>
+        </div>
+        <div class="galleryItem">
+            <h1 class="galleryTitle">Just Do it!</h1>
+            <img src="https://images.pexels.com/photos/1698359/pexels-photo-1698359.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+             alt="" class="galleryImg">
+        </div>
+    </div>
+    <div class="newSeason">
+        <div class="nsItem">
+            <img src="https://images.pexels.com/photos/4753986/pexels-photo-4753986.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+             alt="" class="nsImg">
+        </div>
+        <div class="nsItem">
+            <h3 class="nsTitleSm">WINTER NEW ARRIVALS</h3>
+            <h1 class="nsTitle">New Season</h1>
+            <h1 class="nsTitle">New Collection</h1>
+            <a href="#nav">
+                <button class="nsButton">CHOOSE YOUR STYLE</button>
+            </a>
+        </div>
+        <div class="nsItem">
+            <img src="https://images.pexels.com/photos/6540975/pexels-photo-6540975.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+             alt="" class="nsImg">
+        </div>
     </div>
 
+
+    <footer>
+        <div class="footerLeft">
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">About Us</h1>
+                <ul class="fList">
+                    <li class="fListItem">Company</li>
+                    <li class="fListItem">Contact</li>
+                    <li class="fListItem">Careers</li>
+                    <li class="fListItem">Stores</li>
+                </ul>
+            </div>
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Useful Links</h1>
+                <ul class="fList">
+                    <li class="fListItem">Support</li>
+                    <li class="fListItem">Refund</li>
+                    <li class="fListItem">FAQ</li>
+                    <li class="fListItem">Feedback</li>
+                </ul>
+            </div>
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Products</h1>
+                <ul class="fList">
+                    <li class="fListItem">AIR FORCE</li>
+                    <li class="fListItem">JORDAN</li>
+                    <li class="fListItem">BLAZER</li>
+                    <li class="fListItem">CRATER</li>
+                    <li class="fListItem">HIPPIE</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerRight">
+            <div class="footerRightMenu">
+                <h1 class="fMenuTitle">Subscribe to our newsletter</h1>
+                <div class="fMail">
+                    <input type="text" placeholder="your@email.com" class="fInput">
+                    <button class="fButton">Join!</button>
+                </div>
+            </div>
+            <div class="footerRightMenu">
+                <h1 class="fMenuTitle">Follow Us</h1>
+                <div class="fIcons">
+                    <img src="./img/facebook.png" alt="" class="fIcon">
+                    <img src="./img/twitter.png" alt="" class="fIcon">
+                    <img src="./img/instagram.png" alt="" class="fIcon">
+                    <img src="./img/whatsapp.png" alt="" class="fIcon">
+                </div>
+            </div>
+            <div class="footerRightMenu">
+                <span class="copyright">@Yusra Dev. All rights reserved. 2023.</span>
+            </div>
+        </div>
+    </footer>
     <script src="./app.js"></script>
 </body>
 </html>
